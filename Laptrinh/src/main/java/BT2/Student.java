@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package BT1;
+package BT2;
 
 /**
  *
@@ -14,10 +14,9 @@ public class Student {
     private float age;
     private String phone;
 
-    public Student(){
-        
+    public Student() {
     }
-    
+
     public Student(String fullname, float age, String phone) {
         this.fullname = fullname;
         this.age = age;
@@ -28,20 +27,20 @@ public class Student {
         return fullname;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
-    }
-
     public float getAge() {
         return age;
     }
 
-    public void setAge(float age) {
-        this.age = age;
-    }
-
     public String getPhone() {
         return phone;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    public void setAge(float age) {
+        this.age = age;
     }
 
     public void setPhone(String phone) {
@@ -52,5 +51,7 @@ public class Student {
     public String toString() {
         return "Student{" + "fullname=" + fullname + ", age=" + age + ", phone=" + phone + '}';
     }
+    
+    
     
 }
